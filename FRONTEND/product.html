@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feature Sidebar with Avatar Interaction</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="product.css">
 </head>
 <body>
+   
     <div class="container">
         <aside class="sidebar">
             <h2>Features</h2>
             <ul>
                 <li onclick="showFeature('avatarInteraction')">Avatar Interaction</li>
+                 <div class="chat-body" id="chat-body"></div>
+        <div class="chat-footer">
+            <input type="text" class="form-control" id="message-input" placeholder="Type your message here...">
+            <button class="btn btn-primary" id="send-button">Send</button>
+        </div>
                 <li onclick="showFeature('reminder')">Reminder</li>
                 <li onclick="showFeature('medicalAssistance')">Medical Assistance</li>
                 <li onclick="showFeature('exerciseSuggestion')">Exercise Suggestion</li>
@@ -26,6 +33,9 @@
             </div>
         </main>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
     <script src="product.js"></script>
 </body>
 </html>
